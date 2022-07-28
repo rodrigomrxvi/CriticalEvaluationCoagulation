@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<biochem>
+  <species>
+    <name>AMC</name>
+    <name>ATIII</name>
+    <name>BocVPR</name>
+    <name>BocVPRMCA</name>
+    <name>BocVPRMCAIIa</name>
+    <name>C1inh</name>
+    <name>II</name>
+    <name>IIa</name>
+    <name>IIa=ATIII</name>
+    <name>IX</name>
+    <name>IXa</name>
+    <name>IXa=ATIII</name>
+    <name>IXa=VIIIa</name>
+    <name>IXa=VIIIa=X</name>
+    <name>K</name>
+    <name>K.inhibited</name>
+    <name>PK</name>
+    <name>TF</name>
+    <name>TF=VII</name>
+    <name>TF=VIIa</name>
+    <name>TF=VIIa=ATIII</name>
+    <name>TF=VIIa=IX</name>
+    <name>TF=VIIa=X</name>
+    <name>TF=VIIa=Xa</name>
+    <name>TF=VIIa=Xa=TFPI</name>
+    <name>TFPI</name>
+    <name>V</name>
+    <name>VII</name>
+    <name>VIII</name>
+    <name>VIIIa</name>
+    <name>VIIIa1</name>
+    <name>VIIIa2</name>
+    <name>VIIa</name>
+    <name>Va</name>
+    <name>X</name>
+    <name>XI</name>
+    <name>XII</name>
+    <name>XII=K</name>
+    <name>XIIa</name>
+    <name>XIIa=ATIII</name>
+    <name>XIIa=C1inh</name>
+    <name>XIIa=PK</name>
+    <name>XIIa=XI</name>
+    <name>XIIa=XII</name>
+    <name>XIa</name>
+    <name>XIa=ATIII</name>
+    <name>XIa=C1inh</name>
+    <name>XIa=IX</name>
+    <name>XIa=alpha1AT</name>
+    <name>XIa=alpha2AT</name>
+    <name>Xa</name>
+    <name>Xa=ATIII</name>
+    <name>Xa=TFPI</name>
+    <name>Xa=VIII</name>
+    <name>Xa=Va</name>
+    <name>Xa=Va=II</name>
+    <name>alpha1AT</name>
+    <name>alpha2AT</name>
+    <name>mIIa</name>
+    <name>mIIa=ATIII</name>
+  </species>
+  <reactions>
+    <reaction>TF + VII -- TF=VII    </reaction>
+    <reaction_rate>3.2000e+06</reaction_rate>
+    <reaction>TF=VII -- TF + VII    </reaction>
+    <reaction_rate>3.1000e-03</reaction_rate>
+    <reaction>TF + VIIa -- TF=VIIa    </reaction>
+    <reaction_rate>2.3000e+07</reaction_rate>
+    <reaction>TF=VIIa -- TF + VIIa    </reaction>
+    <reaction_rate>3.1000e-03</reaction_rate>
+    <reaction>TF=VIIa + VII -- TF=VIIa + VIIa    </reaction>
+    <reaction_rate>4.4000e+05</reaction_rate>
+    <reaction>Xa + VII -- Xa + VIIa    </reaction>
+    <reaction_rate>1.3000e+07</reaction_rate>
+    <reaction>IIa + VII -- IIa + VIIa    </reaction>
+    <reaction_rate>2.3000e+04</reaction_rate>
+    <reaction>TF=VIIa + X -- TF=VIIa=X     </reaction>
+    <reaction_rate>2.5000e+07</reaction_rate>
+    <reaction>TF=VIIa=X -- TF=VIIa + X     </reaction>
+    <reaction_rate>1.0500e+00</reaction_rate>
+    <reaction>TF=VIIa=X -- TF=VIIa=Xa    </reaction>
+    <reaction_rate>6.0000e+00</reaction_rate>
+    <reaction>TF=VIIa + Xa -- TF=VIIa=Xa    </reaction>
+    <reaction_rate>2.2000e+07</reaction_rate>
+    <reaction>TF=VIIa=Xa -- TF=VIIa + Xa    </reaction>
+    <reaction_rate>1.9000e+01</reaction_rate>
+    <reaction>TF=VIIa + IX -- TF=VIIa=IX     </reaction>
+    <reaction_rate>1.0000e+07</reaction_rate>
+    <reaction>TF=VIIa=IX -- TF=VIIa + IX     </reaction>
+    <reaction_rate>2.4000e+00</reaction_rate>
+    <reaction>TF=VIIa=IX -- TF=VIIa + IXa</reaction>
+    <reaction_rate>1.8000e+00</reaction_rate>
+    <reaction>II + Xa -- IIa + Xa    </reaction>
+    <reaction_rate>7.5000e+03</reaction_rate>
+    <reaction>IIa + VIII -- IIa + VIIIa    </reaction>
+    <reaction_rate>2.0000e+07</reaction_rate>
+    <reaction>VIIIa + IXa -- IXa=VIIIa    </reaction>
+    <reaction_rate>1.0000e+07</reaction_rate>
+    <reaction>IXa=VIIIa -- VIIIa + IXa    </reaction>
+    <reaction_rate>5.0000e-03</reaction_rate>
+    <reaction>IXa=VIIIa + X -- IXa=VIIIa + Xa     </reaction>
+    <reaction_rate>1.9000e-07 // 2.9000e+01</reaction_rate>
+    <reaction>VIIIa -- VIIIa1 + VIIIa2</reaction>
+    <reaction_rate>6.0000e-03</reaction_rate>
+    <reaction>VIIIa1 + VIIIa2 -- VIIIa</reaction>
+    <reaction_rate>2.2000e+04</reaction_rate>
+    <reaction>IXa=VIIIa=X -- IXa + X + VIIIa1 + VIIIa2    </reaction>
+    <reaction_rate>1.0000e-03</reaction_rate>
+    <reaction>IXa=VIIIa -- IXa + VIIIa1 + VIIIa2 </reaction>
+    <reaction_rate>1.0000e-03</reaction_rate>
+    <reaction>IIa + V -- IIa + Va    </reaction>
+    <reaction_rate>2.0000e+07</reaction_rate>
+    <reaction>Xa + Va -- Xa=Va    </reaction>
+    <reaction_rate>4.0000e+08</reaction_rate>
+    <reaction>Xa=Va -- Xa + Va    </reaction>
+    <reaction_rate>2.0000e-01</reaction_rate>
+    <reaction>Xa=Va + II -- Xa=Va=II     </reaction>
+    <reaction_rate>1.0000e+08</reaction_rate>
+    <reaction>Xa=Va=II -- Xa=Va + II    </reaction>
+    <reaction_rate>1.0300e+02</reaction_rate>
+    <reaction>Xa=Va=II -- Xa=Va + mIIa    </reaction>
+    <reaction_rate>6.3500e+01</reaction_rate>
+    <reaction>Xa=Va + mIIa -- Xa=Va + IIa    </reaction>
+    <reaction_rate>1.5000e+07</reaction_rate>
+    <reaction>Xa + TFPI -- Xa=TFPI    </reaction>
+    <reaction_rate>9.0000e+05</reaction_rate>
+    <reaction>Xa=TFPI -- Xa + TFPI    </reaction>
+    <reaction_rate>3.6000e-04</reaction_rate>
+    <reaction>TF=VIIa=Xa + TFPI -- TF=VIIa=Xa=TFPI    </reaction>
+    <reaction_rate>3.2000e+08</reaction_rate>
+    <reaction>TF=VIIa=Xa=TFPI -- TF=VIIa=Xa + TFPI    </reaction>
+    <reaction_rate>1.1000e-04</reaction_rate>
+    <reaction>TF=VIIa + Xa=TFPI -- TF=VIIa=Xa=TFPI    </reaction>
+    <reaction_rate>5.0000e+07</reaction_rate>
+    <reaction>Xa + ATIII -- Xa=ATIII    </reaction>
+    <reaction_rate>1.5000e+03</reaction_rate>
+    <reaction>mIIa + ATIII -- mIIa=ATIII    </reaction>
+    <reaction_rate>7.1000e+03</reaction_rate>
+    <reaction>IXa + ATIII -- IXa=ATIII    </reaction>
+    <reaction_rate>4.9000e+02</reaction_rate>
+    <reaction>IIa + ATIII -- IIa=ATIII    </reaction>
+    <reaction_rate>7.1000e+03</reaction_rate>
+    <reaction>TF=VIIa + ATIII -- TF=VIIa=ATIII    </reaction>
+    <reaction_rate>2.3000e+02</reaction_rate>
+    <reaction>BocVPRMCA + IIa -- BocVPRMCAIIa    </reaction>
+    <reaction_rate>1.0000e+08</reaction_rate>
+    <reaction>BocVPRMCAIIa -- BocVPRMCA + IIa    </reaction>
+    <reaction_rate>6.1000e+03</reaction_rate>
+    <reaction>BocVPRMCAIIa -- BocVPR + AMC + IIa    </reaction>
+    <reaction_rate>5.3800e+01</reaction_rate>
+    <reaction>XII -- XIIa    </reaction>
+    <reaction_rate>5.0000e-04</reaction_rate>
+    <reaction>XIIa + XII -- XIIa=XII    </reaction>
+    <reaction_rate>1.0000e+08</reaction_rate>
+    <reaction>XIIa=XII -- XIIa + XII    </reaction>
+    <reaction_rate>7.5000e+02</reaction_rate>
+    <reaction>XIIa=XII -- XIIa + XIIa    </reaction>
+    <reaction_rate>3.3000e-02</reaction_rate>
+    <reaction>XIIa + PK -- XIIa=PK    </reaction>
+    <reaction_rate>1.0000e+08</reaction_rate>
+    <reaction>XIIa=PK -- XIIa + PK    </reaction>
+    <reaction_rate>3.6000e+03</reaction_rate>
+    <reaction>XIIa=PK -- XIIa + K    </reaction>
+    <reaction_rate>4.0000e+01</reaction_rate>
+    <reaction>XII + K -- XII=K    </reaction>
+    <reaction_rate>1.0000e+08</reaction_rate>
+    <reaction>XII=K -- XII + K    </reaction>
+    <reaction_rate>4.5300e+01</reaction_rate>
+    <reaction>XII=K -- XIIa + K    </reaction>
+    <reaction_rate>5.7000e+00</reaction_rate>
+    <reaction>PK + K -- K + K    </reaction>
+    <reaction_rate>2.7000e+04</reaction_rate>
+    <reaction>K -- K.inhibited    </reaction>
+    <reaction_rate>1.1000e-02</reaction_rate>
+    <reaction>XIIa + C1inh -- XIIa=C1inh    </reaction>
+    <reaction_rate>3.6000e+03</reaction_rate>
+    <reaction>XIIa + ATIII -- XIIa=ATIII    </reaction>
+    <reaction_rate>2.1600e+01</reaction_rate>
+    <reaction>XIIa + XI -- XIIa=XI    </reaction>
+    <reaction_rate>7.0000e+08</reaction_rate>
+    <reaction>XIIa=XI -- XIIa + XI    </reaction>
+    <reaction_rate>2.0000e+02</reaction_rate>
+    <reaction>XIIa=XI -- XIIa + XIa    </reaction>
+    <reaction_rate>2.0000e-03</reaction_rate>
+    <reaction>XIa + XI -- XIa + XIa    </reaction>
+    <reaction_rate>7.9750e+05</reaction_rate>
+    <reaction>XIa + ATIII -- XIa=ATIII    </reaction>
+    <reaction_rate>3.2000e+02</reaction_rate>
+    <reaction>XIa + C1inh -- XIa=C1inh    </reaction>
+    <reaction_rate>1.8000e+03</reaction_rate>
+    <reaction>XIa + alpha1AT -- XIa=alpha1AT    </reaction>
+    <reaction_rate>1.0000e+02</reaction_rate>
+    <reaction>XIa + alpha2AT -- XIa=alpha2AT    </reaction>
+    <reaction_rate>4.3000e+03</reaction_rate>
+    <reaction>XIa + IX -- XIa=IX    </reaction>
+    <reaction_rate>1.0000e+08</reaction_rate>
+    <reaction>XIa=IX -- XIa + IX    </reaction>
+    <reaction_rate>4.1000e+01</reaction_rate>
+    <reaction>XIa=IX -- XIa + IXa    </reaction>
+    <reaction_rate>7.7000e+00</reaction_rate>
+    <reaction>IXa + X -- IXa + Xa </reaction>
+    <reaction_rate>2.0000e-06 // 6.6700e-04</reaction_rate>
+    <reaction>Xa + VIII -- Xa=VIII    </reaction>
+    <reaction_rate>1.0000e+08</reaction_rate>
+    <reaction>Xa=VIII -- Xa + VIII    </reaction>
+    <reaction_rate>2.1000e+00</reaction_rate>
+    <reaction>Xa=VIII -- Xa + VIIIa    </reaction>
+    <reaction_rate>2.3000e-02</reaction_rate>
+  </reactions>
+</biochem>
