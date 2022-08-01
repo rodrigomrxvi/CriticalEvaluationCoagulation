@@ -1,0 +1,50 @@
+#
+FINAL_TIME: 2500
+NUMBER_OF_TIME: 200
+SCALING_FACTOR: 1e9
+TYPE_OF_PLOT: IIa;mIIa
+METHOD: BDF
+MAX_VALUE_TIME_STEP: np.inf
+XMLFILE: ./Ext_pathway.xml
+
+SPECIES :   ATIII; 2266.7e-9
+SPECIES :   II; 933.0e-9
+SPECIES :   IIa; 0.0
+SPECIES :   IIa=ATIII ; 0.0
+##########################################
+SPECIES :   IX; 6.0e-8
+# code A Ranc SPECIES : IX, 6.0e-8 ############ OK with Hockin et al.
+# papier SPECIES : IX, 6.0e-9 ############ typo
+SPECIES :   IXa; 0.0
+SPECIES :   IXa=ATIII ; 0.0
+SPECIES :   IXa=VIIIa ; 0.0
+SPECIES :   IXa=VIIIa=X ; 0.0
+SPECIES :   TF; 0.0
+SPECIES :   TF=VII ; 0.0
+SPECIES :   TF=VIIa ; 0.001e-9
+SPECIES :   TF=VIIa=ATIII ; 0.0
+SPECIES :   TF=VIIa=IX ; 0.0
+SPECIES :   TF=VIIa=X ; 0.0
+SPECIES :   TF=VIIa=Xa ; 0.0
+SPECIES :   TF=VIIa=Xa=TFPI ; 0.0
+SPECIES :   TFPI; 1.667e-9
+SPECIES :   V; 13.33e-9
+SPECIES :   VII; 6.67e-9
+SPECIES :   VIII; 0.4667e-9 # 100 %
+#SPECIES :   VIII; 0.07e-9  # 15 %
+SPECIES :   VIIIa; 0.0
+SPECIES :   VIIIa1; 0.0
+SPECIES :   VIIIa2; 0.0
+###############################################
+SPECIES :   VIIa; 0.667e-10
+# code A Ranc SPECIES :   VIIa; 0.667e-10 ########### OK with Hockin et al.
+# papier SPECIES :   VIIa; 0.667e-9 ########### typo
+SPECIES :   Va; 0.0
+SPECIES :   X; 106.67e-9
+SPECIES :   Xa; 0.0
+SPECIES :   Xa=ATIII ; 0.0
+SPECIES :   Xa=TFPI ; 0.0
+SPECIES :   Xa=Va ; 0.0
+SPECIES :   Xa=Va=II ; 0.0
+SPECIES :   mIIa ; 0.0
+SPECIES :   mIIa=ATIII ; 0.0
